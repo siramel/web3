@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif; /* Example font-family, you can change this as needed */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    color: #fff; /* Default text color (white) */
+    background-color: transparent; /* Transparent background by default */
+    padding: 5px 10px; /* Add padding for better hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.top-menu ul li a:hover {
+    color: #000; /* Text turns black on hover */
+    background-color: #fff; /* Background turns white on hover */
+}
+
+main {
+    margin: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: black; /* Change the text color to black */
+}
+    
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+}
+
+.top-menu {
+    text-align: center;
+    background-color: #000;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-menu ul li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Add styles for the image and text overlay */
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.big-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 600px;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 20px;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-family: 'Montserrat Light', sans-serif; /* Change font to Gopher Thin */
+}
+
+.image-text h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Define keyframes for the fadeIn animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 20px;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.image-text h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Define keyframes for the fadeIn animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styles for the "Welcome to our website!" text and its fade-in animation */
+
+.fade-in-text {
+    text-align: center;
+    font-size: 60px;
+    opacity: 0;
+    animation: fadeIn 3s; /* Use the same fadeIn animation */
+    animation-fill-mode: forwards;
+    font-family: 'Montserrat Light', sans-serif;
+    transform: translateY(30px); /* Start 30px below the normal position */
+}
+
+/* Keyframes for the "Welcome to my website!" text */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Start 30px below the normal position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at the normal position */
+    }
+}
+
+/* Apply the fadeInUp animation to the "Welcome to my website!" text */
+.fade-in-text {
+    text-align: center;
+    font-size: 40px;
+    opacity: 0;
+    animation: fadeInUp 3s; /* Use the fadeInUp animation */
+    animation-fill-mode: forwards;
+    max-width: 80%;
+    margin: 80px auto; /* Center the text horizontally */
+}
+
+/* Styles for the service boxes */
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-box {
+    width: 20%;
+    margin: 1%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(0); /* Adjusted to start at the normal position */
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.service-box h2 {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+.text-box {
+    margin-top: 10px;
+}
+
+.text-box p {
+    font-size: 16px;
+    color: black;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Styles for the "OUR CLIENTS ARE WORLDWIDE" text and its animation */
+.fade-in-up-text {
+    text-align: center; /* Center the text horizontally */
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 40px; /* Change the font size to 80px */
+    color: white;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: 0;
+    left: 0; /* Reset left to 0 */
+    margin: 20px auto; /* Center the text horizontally */
+}
