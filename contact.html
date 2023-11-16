@@ -1,36 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Contact Us | My Website</title>
+    <title>My Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .top-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .top-menu ul li {
+            margin-right: 20px;
+        }
+
+        .top-menu ul li:last-child {
+            margin-right: 0;
+        }
+
+        .top-menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .top-menu ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .contact-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .contact-section h2 {
+            color: #333;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <img src="sira4.png" alt="Company Logo" class="logo">
-        <nav class="top-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    
+        <div class="header-content">
+            <img src="sira6_Rityta 1.png" alt="Company Logo" class="logo">
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Contact Information</h2>
-        <p>Feel free to get in touch with us using the following contact details:</p>
-        <address>
-            <p>Email: info@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </address>
-    </main>
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="process_contact.php" method="POST">
+            <!-- Contact Information -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>&copy; 2023 My Website</p>
-    </footer>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Project Overview -->
+            <label for="project-description">Briefly describe your business/project:</label>
+            <textarea id="project-description" name="project_description" rows="4" required></textarea>
+
+            <!-- Branding Needs -->
+            <label for="branding-services">What specific branding services are you looking for?</label>
+            <input type="text" id="branding-services" name="branding_services" required>
+
+            <!-- Key Details -->
+            <label for="target-audience">Target audience:</label>
+            <input type="text" id="target-audience" name="target_audience" required>
+
+            <label for="main-competitors">Main competitors:</label>
+            <input type="text" id="main-competitors" name="main_competitors" required>
+
+            <!-- Logistics -->
+            <label for="budget">Estimated budget:</label>
+            <input type="text" id="budget" name="budget" required>
+
+            <label for="project-timeline">Project timeline or deadline:</label>
+            <input type="text" id="project-timeline" name="project_timeline" required>
+
+            <!-- Comments/Requests -->
+            <label for="comments-requests">Any additional details or specific requests:</label>
+            <textarea id="comments-requests" name="comments_requests" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Rest of your HTML content -->
+
 </body>
+
 </html>

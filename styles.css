@@ -1,21 +1,34 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background color */
-    color: #fff; /* White text color */
-    font-family: Arial, sans-serif; /* Example font-family, you can change this as needed */
+    background-color: #EBE8E3;
+    color: #fff;
+    font-family: 'Montserrat Regular', sans-serif;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    padding: 10px;
+    background-color: #000000;
+    padding: 20px;
 }
 
 h1 {
     margin: 0;
+}
+
+.top-menu ul li#contact-us a {
+    padding: 5px 10px;
+    border: 2px solid #fff; /* Set a 2px solid white border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add transitions for a smooth effect */
+}
+
+.top-menu ul li#contact-us a:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000; /* Change the border color to black on hover */
 }
 
 .top-menu ul {
@@ -40,15 +53,15 @@ h1 {
 
 .top-menu ul li a {
     text-decoration: none;
-    color: #fff; /* Default text color (white) */
-    background-color: transparent; /* Transparent background by default */
-    padding: 5px 10px; /* Add padding for better hover effect */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    color: #fff;
+    background-color: transparent;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .top-menu ul li a:hover {
-    color: #000; /* Text turns black on hover */
-    background-color: #fff; /* Background turns white on hover */
+    color: #000;
+    background-color: #fff;
 }
 
 main {
@@ -56,23 +69,23 @@ main {
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: #000000;
     text-align: center;
     padding: 10px;
-    color: black; /* Change the text color to black */
+    color: rgb(255, 255, 255);
 }
-    
 
 .logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 200px;
+    max-width: 350px;
     height: auto;
+    margin-right: auto;
+    margin-left: 700px;
+    display: block;
+    text-align: center;
 }
 
 .top-menu {
-    text-align: center;
-    background-color: #000;
+    height: 50px;
 }
 
 .top-menu ul {
@@ -102,52 +115,27 @@ footer {
     background-color: #fff;
 }
 
-/* Add styles for the image and text overlay */
-
 .image-container {
-    position: relative;
-    text-align: center;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    margin: -20px 0 0 0; /* Adjust the top margin to cut more from the top */
+    padding: 0;
 }
 
 .big-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 1200px;
-    height: 600px;
+    width: 100%;
+    height: auto;
+    margin-top: -40px; /* Adjust the top margin to cut more from the top */
+    margin-bottom: -40px; /* Adjust the bottom margin to expand more from the bottom */
+    position: relative;
+    top: -220px;
+    left: 1px;
 }
 
 .image-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
-    padding: 20px;
-    animation: fadeIn 3s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    font-family: 'Montserrat Light', sans-serif; /* Change font to Gopher Thin */
-}
-
-.image-text h1 {
-    font-size: 60px;
-    margin: 0;
-}
-
-/* Define keyframes for the fadeIn animation */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Start with 0 opacity */
-    }
-    to {
-        opacity: 1; /* End with full opacity */
-    }
-}
-
-.image-text {
-    position: absolute;
-    top: 50%;
+    top: 53%; /* Adjust the top position to move the text down */
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000000;
@@ -162,8 +150,6 @@ footer {
     font-size: 60px;
     margin: 0;
 }
-
-/* Define keyframes for the fadeIn animation */
 
 @keyframes fadeIn {
     from {
@@ -174,60 +160,109 @@ footer {
     }
 }
 
-/* Styles for the "Welcome to our website!" text and its fade-in animation */
-
 .fade-in-text {
-    text-align: center;
-    font-size: 60px;
+    text-align: left;
     opacity: 0;
-    animation: fadeIn 3s; /* Use the same fadeIn animation */
+    animation: fadeIn 3s;
     animation-fill-mode: forwards;
     font-family: 'Montserrat Light', sans-serif;
-    transform: translateY(30px); /* Start 30px below the normal position */
+    font-size: 12px;
+    transform: translateY(30px);
 }
 
-/* Keyframes for the "Welcome to my website!" text */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px); /* Start 30px below the normal position */
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0); /* End at the normal position */
+        transform: translateY(0);
     }
 }
 
-/* Apply the fadeInUp animation to the "Welcome to my website!" text */
-.fade-in-text {
-    text-align: center;
-    font-size: 40px;
-    opacity: 0;
-    animation: fadeInUp 3s; /* Use the fadeInUp animation */
-    animation-fill-mode: forwards;
-    max-width: 80%;
-    margin: 80px auto; /* Center the text horizontally */
+.cursive {
+    font-style: italic;
 }
 
-/* Styles for the service boxes */
+.image-text h1 {
+    color: #fff;
+    font-size: 120px;
+    margin-top: -20px;
+}
+
+.read-more {
+    color: #fff; /* Change the color to white */
+    background-color: #000; /* Change the background color if needed */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000000; /* Add border styling if needed */
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.read-more:hover {
+    color: #000; /* Change the color on hover if needed */
+    background-color: #fff; /* Change the background color on hover if needed */
+}
+
+.image-text h1 span {
+    display: inline-block;
+}
+
+.image-text h1 span:nth-child(1) {
+    animation: fadeInUp 1s forwards;
+}
+
+.image-text h1 span:nth-child(2) {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s;
+}
+
+.image-text h1 span:nth-child(3) {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 3s;
+}
+
+.white-box-container {
+    text-align: center;
+}
+
+.white-box {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.white-box p {
+    font-size: 20px;
+    color: black;
+    margin: 10px 0;
+}
+
 .service-boxes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping to keep boxes in the same row */
+    justify-content: flex-start; /* Align boxes to the start of the container */
     align-items: center;
     padding: 20px;
+    margin-left: 285px; /* Adjust the margin to move the boxes more to the right */
 }
 
 .service-box {
-    width: 20%;
-    margin: 1%;
-    background-color: #fff;
+    width: 25%; /* Adjust the width as needed */
+    margin-right: 10px; /* Adjust the space between service boxes as needed */
+    background-color: #000000;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     text-align: center;
     border-radius: 5px;
     opacity: 0;
-    transform: translateY(0); /* Adjusted to start at the normal position */
+    transform: translateY(0);
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -236,39 +271,125 @@ footer {
 .service-box h2 {
     font-size: 24px;
     margin: 0;
-    color: black;
+    color: rgb(255, 255, 255);
 }
+
+.service-box:last-child {
+    margin-right: 0; /* Remove margin from the last service box */
+}
+
+/* Add this rule to create the circle and arrow */
+.service-box:last-child::after {
+    content: '\2192'; /* Unicode arrow character (right arrow) */
+    font-size: px; /* Adjust the size of the arrow */
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    width: 80px; /* Adjust the size of the circle */
+    height: 80px; /* Adjust the size of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Position to the right of the last service box */
+    transform: translateY(-50%);
+    margin-left: 10px; /* Add a margin for spacing between the box and circle */
+}
+
+.text-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%; /* Adjust the left margin as needed */
+}
+
+.text-box-container .text-box {
+    background-color: #EBE8E3;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 20px 0 50px 50px; /* Adjust the top, right, bottom, and left margins */
+    width: 50%; /* Set width to 50% of the container */
+}
+
 
 .text-box {
-    margin-top: 10px;
+    width: 50px;
+}
+    
+
+
+.text-box-image {
+    width: 50%; /* Adjust the width of the image */
+    height: 70%;
+    margin-top: 100px;
+    margin-left: -65px; /* Adjust the left margin as needed */
 }
 
-.text-box p {
-    font-size: 16px;
-    color: black;
+
+/* Additional space between "Our Services" and the text box */
+.section-title {
+    margin-bottom: 60px;
 }
+
+.text-box-container .read-more {
+    display: block;
+    width: fit-content;
+    margin: 40px 0 0px 0; /* Adjust the top, right, bottom, and left margins */
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+
+
+
+/* Additional space between "Our Services" and the text box */
+.section-title {
+    margin-bottom: 60px;
+}
+
+/* Apply the animation to the .text-box */
+.text-box.animate {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 
 .read-more {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    background-color: #000;
-    color: #fff;
+    display: block; /* Make the link a block element */
+    width: fit-content; /* Set the width to fit its content */
+    margin: 20px auto 0; /* Center the link horizontally and move it down */
+    color: #fff; /* Change the color to white */
+    background-color: #000; /* Change the background color if needed */
     padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000000; /* Add border styling if needed */
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .read-more:hover {
-    background-color: #fff;
-    color: #000;
+    color: #000; /* Change the color on hover if needed */
+    background-color: #fff; /* Change the background color on hover if needed */
 }
 
-/* Styles for the "OUR CLIENTS ARE WORLDWIDE" text and its animation */
+.text-box p {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
 .fade-in-up-text {
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
     font-family: 'Montserrat Light', sans-serif;
-    font-size: 40px; /* Change the font size to 80px */
+    font-size: 40px;
     color: white;
     opacity: 0;
     animation-name: fadeInUp;
@@ -276,6 +397,164 @@ footer {
     animation-fill-mode: forwards;
     position: relative;
     top: 0;
-    left: 0; /* Reset left to 0 */
-    margin: 20px auto; /* Center the text horizontally */
+    left: 0;
+    margin: 20px auto;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.dark-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 1s ease;
+}
+
+.darken-image {
+    filter: brightness(40%);
+    transition: filter 1s ease;
+}
+
+h1 {
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #000; /* Change the color as needed */
+}
+
+.section-title {
+    margin-bottom: 20px;
+    margin-left: 305px; /* Adjust the left margin as needed */
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #000; /* Change the color as needed */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 255px;
+}
+
+/* Style for each grid item (image) */
+.grid-item {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: filter 0.3s;
+}
+
+/* Darken the image on hover */
+.grid-item:hover img {
+    filter: brightness(50%); /* Adjust the brightness for an even darker effect */
+}
+
+
+/* Style for the "See More" text */
+.grid-item .see-more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Make "See More" text visible on hover */
+.grid-item:hover .see-more {
+    opacity: 1;
+}
+
+/* Add this rule to create the circle and arrow */
+.service-box:last-child::after {
+    content: '\2192'; /* Unicode arrow character (right arrow) */
+    font-size: px; /* Adjust the size of the arrow */
+    color: #fff; /* Set the initial color of the arrow to white */
+    background-color: #000; /* Set the initial background color of the circle to black */
+    border-radius: 50%;
+    width: 80px; /* Adjust the size of the circle */
+    height: 80px; /* Adjust the size of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Position to the right of the last service box */
+    transform: translateY(-50%);
+    margin-left: 10px; /* Add a margin for spacing between the box and circle */
+}
+
+.service-box:last-child::after {
+    content: '\2192'; /* Unicode arrow character (right arrow) */
+    font-size: 24px; /* Adjust the size of the arrow */
+    color: #fff; /* Set the initial color of the arrow to white */
+    background-color: #000; /* Set the initial background color of the circle to black */
+    border-radius: 50%;
+    width: 80px; /* Adjust the size of the circle */
+    height: 80px; /* Adjust the size of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Position to the right of the last service box */
+    transform: translateY(-50%);
+    margin-left: 10px; /* Add a margin for spacing between the box and circle */
+    z-index: 1; /* Add z-index to ensure it's above other elements */
+}
+
+
+/* Add this rule to create the circle and arrow for the bottom pictures */
+.bottom-pictures-container .circle-arrow::after {
+    content: '\2192'; /* Unicode arrow character (right arrow) */
+    font-size: px; /* Adjust the size of the arrow */
+    color: #fff; /* Set the initial color of the arrow to white */
+    background-color: #000; /* Set the initial background color of the circle to black */
+    border-radius: 50%;
+    width: 80px; /* Adjust the size of the circle */
+    height: 80px; /* Adjust the size of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Position to the right of the pictures container */
+    transform: translateY(-50%);
+    margin-left: 10px; /* Add a margin for spacing between the pictures and circle */
+}
+
+.service-box:last-child:hover::after {
+    color: #000; /* Change the color of the arrow to black on hover */
+    background-color: #fff; /* Change the background color of the circle to white on hover */
+}
+
+.contact-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 20px;
+    max-width: 600px; /* Set a maximum width for the form */
 }
